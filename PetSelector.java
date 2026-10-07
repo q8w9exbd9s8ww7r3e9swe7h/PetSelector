@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+// name: Leo Brennan
+// Description: this program helps Vermin Supreme decide which pet to give to each citizen when elected
 class PetSelector {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -10,6 +11,7 @@ class PetSelector {
     System.out.print("Enter your name: ");
     String name = scanner.nextLine();
     scanner.close();
-
+    Boolean nameStartsWithLetter = name.matches("^[A-Za-z]");
+    Boolean nameStartsWithConsonant = name.matches("^[^(aeiouAEIOU)]");
   }
 }
