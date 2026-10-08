@@ -11,7 +11,53 @@ class PetSelector {
     System.out.print("Enter your name: ");
     String name = scanner.nextLine();
     scanner.close();
-    Boolean nameStartsWithLetter = name.matches("^[A-Za-z]");
+    String animal = "pet rock";
     Boolean nameStartsWithConsonant = name.matches("^[^(aeiouAEIOU)]");
+    if (!(color.equals("red") || color.equals("green") || color.equals("blue"))) {
+      System.out.println("Invalid color!");
+      return;
+    }
+    if (!(season.equals("fall") || season.equals("winter") || color.equals("spring") || color.equals("summer"))) {
+      System.out.println("Invalid season!");
+      return;
+    }
+    else if (!(season.equals("fall") || season.equals("winter") || color.equals("spring") || color.equals("summer"))) {
+      System.out.println("Invalid season!");
+      return;
+    }
+    else if (!name.matches("^[A-Za-z]")) {
+      System.out.println("Invalid name!");
+      return;
+    }
+    if (color.equals("blue")) {
+      if (season.equals("fall")) {
+        animal = "alligator";
+      }
+      else if (season.equals("spring")) {
+        animal = "ostrich";
+      }
+      else if (nameStartsWithConsonant && season.equals("winter")) {
+        animal = "axolotl";
+      }
+    }
+    else if (color.equals("green")) {
+      if (nameStartsWithConsonant && season.equals("winter")) {
+        animal = "giraffe";
+      }
+      else if (!season.equals("fall")) {
+        animal = "dog";
+      }
+    }
+    else if (color.equals("red")) {
+      if (nameStartsWithConsonant) {
+        animal = "panda";
+      }
+      else  {
+        animal = "porcupine";
+      }
+    }
+    else if (season.equals("summer")) {
+      animal = "pony";
+    }
   }
 }
