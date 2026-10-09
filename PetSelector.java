@@ -59,5 +59,6 @@ class PetSelector {
     else if (season.equals("summer")) {
       animal = "pony";
     }
+    System.out.println("Your perfect pet is: " + animal);
   }
 }
