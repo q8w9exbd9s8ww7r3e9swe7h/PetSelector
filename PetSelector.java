@@ -12,17 +12,16 @@ class PetSelector {
     String name = scanner.nextLine();
     scanner.close();
     String animal = "pet rock";
-    Boolean nameValid = name.matches("^[A-Za-z]");
-    Boolean nameStartsWithConsonant = name.matches("^[^(aeiouAEIOU)]");
-    if (!(color.matches("red|green|blue"))) {
+    Boolean nameStartsWithConsonant = name.matches("^[^(aeiouAEIOU)].*");
+    if (!color.matches("red|green|blue")) {
       System.out.println("Invalid color!");
       return;
     }
-    else if (!(season.matches("fall|winter|summer|spring"))) {
+    else if (!season.matches("fall|winter|summer|spring")) {
       System.out.println("Invalid season!");
       return;
     }
-    else if (!nameValid) {
+    else if (!name.matches("^[A-Za-z].*")) {
       System.out.println("Invalid name!");
       return;
     }
