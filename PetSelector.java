@@ -1,5 +1,5 @@
 import java.util.Scanner;
-// name: Leo Brennan
+// Name: Leo Brennan
 // Description: this program helps Vermin Supreme decide which pet to give to each citizen when elected
 class PetSelector {
   public static void main(String[] args) {
