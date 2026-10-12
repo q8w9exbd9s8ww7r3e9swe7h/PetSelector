@@ -11,8 +11,6 @@ class PetSelector {
     System.out.print("Enter your name: ");
     String name = scanner.nextLine().toLowerCase().trim();
     scanner.close();
-    String animal = "pet rock";
-    Boolean nameStartsWithConsonant = name.matches("^[^(aeiouAEIOU)].*");
     if (!color.matches("red|green|blue")) {
       System.out.println("Invalid color!");
       return;
@@ -25,6 +23,8 @@ class PetSelector {
       System.out.println("Invalid name!");
       return;
     }
+    String animal = "pet rock";
+    Boolean nameStartsWithConsonant = name.matches("^[^(aeiouAEIOU)].*");
     if (color.equals("blue")) {
       if (season.equals("fall")) {
         animal = "alligator";
