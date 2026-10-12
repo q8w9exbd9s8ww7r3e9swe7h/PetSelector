@@ -5,11 +5,11 @@ class PetSelector {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.print("Enter your favorite color (Either red, blue or green): ");
-    String color = scanner.nextLine();
+    String color = scanner.nextLine().toLowerCase().trim();
     System.out.print("Enter your favorite season (winter, spring, summer, fall): ");
-    String season = scanner.nextLine();
+    String season = scanner.nextLine().toLowerCase().trim();
     System.out.print("Enter your name: ");
-    String name = scanner.nextLine();
+    String name = scanner.nextLine().toLowerCase().trim();
     scanner.close();
     String animal = "pet rock";
     Boolean nameStartsWithConsonant = name.matches("^[^(aeiouAEIOU)].*");
