@@ -52,7 +52,7 @@ class PetSelector {
         animal = "porcupine";
       }
     }
-    else if (season.equals("summer")) {
+    if (season.equals("summer") && animal.equals("pet rock")) {
       animal = "pony";
     }
     System.out.println("Your perfect pet is: " + animal);
